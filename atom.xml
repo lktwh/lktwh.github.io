@@ -18,6 +18,11 @@
 &lt;li&gt;[算法，算法 - 新手]  表示在算法下的子目录，算法 - 新手下&lt;/li&gt;
 &lt;li&gt;Java 				表示在 java 分类下&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;This is a image test post.&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/assets/wallpaper-2572384.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/assets/wallpaper-2311325.jpg&#34; alt=&#34;Caption&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/assets/wallpaper-878514.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://placehold.it/350x150.jpg&#34; alt=&#34;Small Picture&#34;&gt;&lt;/p&gt;
 </content>
         <category term="STM32" scheme="https://lktwh.github.io/categories/stm32/" />
         <category term="单片机" scheme="https://lktwh.github.io/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" />
