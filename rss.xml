@@ -165,12 +165,26 @@
 &lt;/ol&gt;
 &lt;h3 id=&#34;任务删除&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#任务删除&#34;&gt;#&lt;/a&gt; 任务删除&lt;/h3&gt;
 &lt;p&gt;任务删除函数：&lt;/p&gt;
-&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;vTaskDelete&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;( TaskHandle_t xTaskToDelete )&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;figcaption&gt;&lt;span&gt;任务删除函数&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;vTaskDelete&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;( TaskHandle_t xTaskToDelete )&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;参数说明：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;pvTaskCode ：任务句柄，使用 xTaskCreate 创建任务时可以得到一个句柄。也可以传入 NULL，表示删除自己。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;任务优先级&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#任务优先级&#34;&gt;#&lt;/a&gt; 任务优先级&lt;/h3&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://lktwh.github.io/2023/10/03/datastructure/stack/</guid>
+            <title>栈</title>
+            <link>https://lktwh.github.io/2023/10/03/datastructure/stack/</link>
+            <category term="数据结构" scheme="https://lktwh.github.io/categories/datastructure/" />
+            <category term="栈" scheme="https://lktwh.github.io/tags/%E6%A0%88/" />
+            <pubDate>Tue, 03 Oct 2023 20:14:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;这里开始正文。。。。。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[算法，算法 - 新手]  表示在算法下的子目录，算法 - 新手下&lt;/li&gt;
+&lt;li&gt;Java 				表示在 java 分类下&lt;/li&gt;
+&lt;/ul&gt;
  ]]></description>
         </item>
         <item>
@@ -188,20 +202,6 @@
 &lt;p&gt;This is a image test post.&lt;/p&gt;
 &lt;p&gt;okkk&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;/assets/wallpaper-878514.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://lktwh.github.io/2023/10/03/datastructure/stack/</guid>
-            <title>栈</title>
-            <link>https://lktwh.github.io/2023/10/03/datastructure/stack/</link>
-            <category term="数据结构" scheme="https://lktwh.github.io/categories/datastructure/" />
-            <category term="栈" scheme="https://lktwh.github.io/tags/%E6%A0%88/" />
-            <pubDate>Tue, 03 Oct 2023 20:14:00 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;这里开始正文。。。。。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;[算法，算法 - 新手]  表示在算法下的子目录，算法 - 新手下&lt;/li&gt;
-&lt;li&gt;Java 				表示在 java 分类下&lt;/li&gt;
-&lt;/ul&gt;
  ]]></description>
         </item>
         <item>
