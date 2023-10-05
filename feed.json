@@ -11,7 +11,7 @@
             "url": "https://lktwh.github.io/2023/10/03/os/FreeRTOS/",
             "title": "FreeRTOS",
             "date_published": "2023-10-03T14:26:00.000Z",
-            "content_html": "<p>这里开始正文。。。。。</p>\n<ul>\n<li>[算法，算法 - 新手]  表示在算法下的子目录，算法 - 新手下</li>\n<li>Java \t\t\t\t表示在 java 分类下</li>\n</ul>\n",
+            "content_html": "<h1 id=\"什么是实时操作系统\"><a class=\"anchor\" href=\"#什么是实时操作系统\">#</a> 什么是实时操作系统</h1>\n<h2 id=\"操作系统\"><a class=\"anchor\" href=\"#操作系统\">#</a> 操作系统</h2>\n<p>一个操作系统的主要功能主要有：</p>\n<ul>\n<li>任务（应用程序）的调度管理</li>\n<li>堆栈和内存管理</li>\n<li>文件管理</li>\n<li>队列管理</li>\n<li>中断和定时器管理</li>\n<li>资源管理</li>\n<li>输入输出管理</li>\n</ul>\n<h2 id=\"实时操作系统rtos\"><a class=\"anchor\" href=\"#实时操作系统rtos\">#</a> 实时操作系统（RTOS）</h2>\n<p>是指当外界事件或数据产生时，能够接受并以足够快的速度予以处理，其处理的结果又能在规定的时间之内来控制生产过程或对处理系统做出快速响应，调度一切可利用的资源完成实时任务，并控制所有实时任务协调一致运行的操作系统。提供及时响应和高可靠性是其主要特点。</p>\n<h2 id=\"freertos-源码概述\"><a class=\"anchor\" href=\"#freertos-源码概述\">#</a> FreeRTOS 源码概述</h2>\n<h3 id=\"freertos-目录结构\"><a class=\"anchor\" href=\"#freertos-目录结构\">#</a> FreeRTOS 目录结构</h3>\n<p><img data-src=\"/assets/freertos1.png\" alt=\"\"></p>\n",
             "tags": [
                 "操作系统",
                 "FreeRTOS"

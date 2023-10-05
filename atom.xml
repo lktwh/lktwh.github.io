@@ -13,11 +13,23 @@
         <id>https://lktwh.github.io/2023/10/03/os/FreeRTOS/</id>
         <title>FreeRTOS</title>
         <link rel="alternate" href="https://lktwh.github.io/2023/10/03/os/FreeRTOS/"/>
-        <content type="html">&lt;p&gt;这里开始正文。。。。。&lt;/p&gt;
+        <content type="html">&lt;h1 id=&#34;什么是实时操作系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是实时操作系统&#34;&gt;#&lt;/a&gt; 什么是实时操作系统&lt;/h1&gt;
+&lt;h2 id=&#34;操作系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作系统&#34;&gt;#&lt;/a&gt; 操作系统&lt;/h2&gt;
+&lt;p&gt;一个操作系统的主要功能主要有：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[算法，算法 - 新手]  表示在算法下的子目录，算法 - 新手下&lt;/li&gt;
-&lt;li&gt;Java 				表示在 java 分类下&lt;/li&gt;
+&lt;li&gt;任务（应用程序）的调度管理&lt;/li&gt;
+&lt;li&gt;堆栈和内存管理&lt;/li&gt;
+&lt;li&gt;文件管理&lt;/li&gt;
+&lt;li&gt;队列管理&lt;/li&gt;
+&lt;li&gt;中断和定时器管理&lt;/li&gt;
+&lt;li&gt;资源管理&lt;/li&gt;
+&lt;li&gt;输入输出管理&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;实时操作系统rtos&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实时操作系统rtos&#34;&gt;#&lt;/a&gt; 实时操作系统（RTOS）&lt;/h2&gt;
+&lt;p&gt;是指当外界事件或数据产生时，能够接受并以足够快的速度予以处理，其处理的结果又能在规定的时间之内来控制生产过程或对处理系统做出快速响应，调度一切可利用的资源完成实时任务，并控制所有实时任务协调一致运行的操作系统。提供及时响应和高可靠性是其主要特点。&lt;/p&gt;
+&lt;h2 id=&#34;freertos-源码概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#freertos-源码概述&#34;&gt;#&lt;/a&gt; FreeRTOS 源码概述&lt;/h2&gt;
+&lt;h3 id=&#34;freertos-目录结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#freertos-目录结构&#34;&gt;#&lt;/a&gt; FreeRTOS 目录结构&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;/assets/freertos1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 </content>
         <category term="操作系统" scheme="https://lktwh.github.io/categories/os/" />
         <category term="FreeRTOS" scheme="https://lktwh.github.io/tags/FreeRTOS/" />
