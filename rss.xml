@@ -19,8 +19,7 @@
             <category term="操作系统" scheme="https://lktwh.github.io/categories/os/" />
             <category term="FreeRTOS" scheme="https://lktwh.github.io/tags/FreeRTOS/" />
             <pubDate>Tue, 03 Oct 2023 22:26:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;什么是实时操作系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是实时操作系统&#34;&gt;#&lt;/a&gt; 什么是实时操作系统&lt;/h1&gt;
-&lt;h2 id=&#34;操作系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作系统&#34;&gt;#&lt;/a&gt; 操作系统&lt;/h2&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;操作系统&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#操作系统&#34;&gt;#&lt;/a&gt; 操作系统&lt;/h2&gt;
 &lt;p&gt;一个操作系统的主要功能主要有：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;任务（应用程序）的调度管理&lt;/li&gt;
@@ -32,24 +31,146 @@
 &lt;li&gt;输入输出管理&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;实时操作系统rtos&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实时操作系统rtos&#34;&gt;#&lt;/a&gt; 实时操作系统（RTOS）&lt;/h2&gt;
-&lt;p&gt;是指当外界事件或数据产生时，能够接受并以足够快的速度予以处理，其处理的结果又能在规定的时间之内来控制生产过程或对处理系统做出快速响应，调度一切可利用的资源完成实时任务，并控制所有实时任务协调一致运行的操作系统。提供及时响应和高可靠性是其主要特点。&lt;/p&gt;
+&lt;p&gt;​		是指当外界事件或数据产生时，能够接受并以足够快的速度予以处理，其处理的结果又能在规定的时间之内来控制生产过程或对处理系统做出快速响应，调度一切可利用的资源完成实时任务，并控制所有实时任务协调一致运行的操作系统。提供及时响应和高可靠性是其主要特点。&lt;/p&gt;
+&lt;p&gt;​		&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZnJlZXJ0b3Mub3JnL3poLWNuLWNtbi1zL2ZlYXR1cmVzLmh0bWw=&#34;&gt;FreeRTOS 开发者文档&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;freertos-源码概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#freertos-源码概述&#34;&gt;#&lt;/a&gt; FreeRTOS 源码概述&lt;/h2&gt;
 &lt;h3 id=&#34;freertos-目录结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#freertos-目录结构&#34;&gt;#&lt;/a&gt; FreeRTOS 目录结构&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;/assets/freertos1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://lktwh.github.io/2023/10/03/datastructure/stack/</guid>
-            <title>栈</title>
-            <link>https://lktwh.github.io/2023/10/03/datastructure/stack/</link>
-            <category term="数据结构" scheme="https://lktwh.github.io/categories/datastructure/" />
-            <category term="栈" scheme="https://lktwh.github.io/tags/%E6%A0%88/" />
-            <pubDate>Tue, 03 Oct 2023 20:14:00 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;这里开始正文。。。。。&lt;/p&gt;
+&lt;h3 id=&#34;核心文件的作用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#核心文件的作用&#34;&gt;#&lt;/a&gt; 核心文件的作用&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Source 下的文件&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;作用&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;task.c&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;必需， 任务操作&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;list.c&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;必需，列表&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;queue.c&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;基本必需，提供队列操作、信号量 (semaphore) 操作&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;timer.c&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;可选，software timer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;event_groups.c&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;可选，提供 event group 功能&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;croutine.c&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;可选，过时了&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;堆和栈&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#堆和栈&#34;&gt;#&lt;/a&gt; 堆和栈&lt;/h2&gt;
+&lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;[算法，算法 - 新手]  表示在算法下的子目录，算法 - 新手下&lt;/li&gt;
-&lt;li&gt;Java 				表示在 java 分类下&lt;/li&gt;
+&lt;li&gt;堆，heap，就是一块空闲的内存，需要提供管理函数
+&lt;ul&gt;
+&lt;li&gt;malloc：从堆里划出一块空间给程序使用&lt;/li&gt;
+&lt;li&gt;free：用完后，再把它标记为 &amp;quot;空闲&amp;quot; 的，可以再次使用&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;栈，stack，函数调用时局部变量保存在栈中，当前程序的环境也是保存在栈中
+&lt;ul&gt;
+&lt;li&gt;可以从堆中分配一块空间用作栈&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;每个 FreeRTOS 任务都需要&lt;strong&gt;自己的栈空间&lt;/strong&gt;（任务栈），用来保存每个任务自己的现场、自己的局部变量以及调用关系&lt;/p&gt;
+&lt;h2 id=&#34;内存管理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#内存管理&#34;&gt;#&lt;/a&gt; 内存管理&lt;/h2&gt;
+&lt;p&gt;内存管理就是如何如使用 FreeRTOS 中的堆。每次创建任务、队列、互斥锁、软件定时器、信号量或事件组时，RTOS 内核都需要 RAM ， RAM 可以从 RTOS API 对象创建函数内的 RTOS 堆自动动态分配。&lt;/p&gt;
+&lt;p&gt;在 C 语言的库函数中，由 malloc、free 等函数，但是它们不适用在 FreeRTOS 中：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不适合用在资源紧缺的嵌入式系统中&lt;/li&gt;
+&lt;li&gt;这些函数的实现过于复杂、占据的代码空间太大&lt;/li&gt;
+&lt;li&gt;并非线程安全的 (thread- safe)&lt;/li&gt;
+&lt;li&gt;运行有不确定性：每次调用这些函数时花费的时间可能都不相同&lt;/li&gt;
+&lt;li&gt;内存碎片化&lt;/li&gt;
+&lt;li&gt;使用不同的编译器时，需要进行复杂的配置&lt;/li&gt;
+&lt;li&gt;有时候难以调试&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;因此，FreeRTOS 提供了几套复杂性和功能各不行同的堆的管理方案，我们可以根据自己的需求，选择合适的方案。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZnJlZXJ0b3Mub3JnL3poLWNuLWNtbi1zL2EwMDExMS5odG1sI2hlYXBfMQ==&#34;&gt;heap_1&lt;/span&gt; —— 最简单，不允许释放内存。&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZnJlZXJ0b3Mub3JnL3poLWNuLWNtbi1zL2EwMDExMS5odG1sI2hlYXBfMg==&#34;&gt;heap_2&lt;/span&gt;—— 允许释放内存，但不会合并相邻的空闲块。&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZnJlZXJ0b3Mub3JnL3poLWNuLWNtbi1zL2EwMDExMS5odG1sI2hlYXBfMw==&#34;&gt;heap_3&lt;/span&gt; —— 简单包装了标准 malloc () 和 free ()，以保证线程安全。&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZnJlZXJ0b3Mub3JnL3poLWNuLWNtbi1zL2EwMDExMS5odG1sI2hlYXBfNA==&#34;&gt;heap_4&lt;/span&gt; —— 合并相邻的空闲块以避免碎片化。 包含绝对地址放置选项。&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZnJlZXJ0b3Mub3JnL3poLWNuLWNtbi1zL2EwMDExMS5odG1sI2hlYXBfNQ==&#34;&gt;heap_5 &lt;/span&gt;—— 如同 heap_4，能够跨越多个&lt;strong&gt;不相邻内存区域的堆&lt;/strong&gt;。比如我不仅可以使用片上的 RAM ，还可以使用片外的 RAM。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在这些方案中 heap_4 较为常用&lt;/p&gt;
+&lt;h3 id=&#34;heap_4&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#heap_4&#34;&gt;#&lt;/a&gt; heap_4&lt;/h3&gt;
+&lt;p&gt;Heap_4 会把相邻空闲内存合并为一个大的空闲内存，可以较少内存的碎片化问题。适用于这种场景：频繁地分配、释放不同大小的内存。&lt;/p&gt;
+&lt;p&gt;内存堆仍然是一个大数组，定义为：&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;type&#34;&gt;uint8_t&lt;/span&gt; ucHeap[ configTOTAL_HEAP_SIZE ];&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;可用堆空间的总量通过  &lt;code&gt;configTOTAL_HEAP_SIZE&lt;/code&gt;  设置（位于  &lt;code&gt;FreeRTOSConfig.h&lt;/code&gt;  中）&lt;/p&gt;
+&lt;p&gt;heap_4 的功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;即使应用程序重复删除任务、队列、 信号量、互斥锁等，仍然可用。&lt;/li&gt;
+&lt;li&gt;与 heap_2 实现相比，导致堆空间严重碎片化成多个小块的可能性更小 （即使正在分配和释放的内存是随机大小） 。&lt;/li&gt;
+&lt;li&gt;不具有确定性，但比大多数标准 C 库 malloc 实现更有效。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;使用的-api&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用的-api&#34;&gt;#&lt;/a&gt; 使用的 API&lt;/h3&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; *&lt;span class=&#34;title function_&#34;&gt;pvPortMalloc&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;( &lt;span class=&#34;type&#34;&gt;size_t&lt;/span&gt; xSize )&lt;/span&gt;   &lt;span class=&#34;comment&#34;&gt;//内存申请函数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;vPortFree&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;( &lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; *pv )&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;//内存释放函数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;vPortInitialiseBlocks&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;( &lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; )&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;//初始化内存堆函数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;size_t&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;xPortGetFreeHeapSize&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;( &lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; )&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;//获取当前未分配的内存堆大小&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;size_t&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;xPortGetMinimumEverFreeHeapSize&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;( &lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; )&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;//获取未分配的内存堆历史最小值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;任务管理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#任务管理&#34;&gt;#&lt;/a&gt; 任务管理&lt;/h2&gt;
+&lt;p&gt;在使用 FeeRTOS 时，我们在 application 中创建多个任务。&lt;/p&gt;
+&lt;h3 id=&#34;什么是任务&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是任务&#34;&gt;#&lt;/a&gt; 什么是任务&lt;/h3&gt;
+&lt;p&gt;在 FreeRTOS 中，任务就是一个函数，原型如下，通常包含一个永远不会退出的循环体&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;ATaskFunction&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;( &lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; *pvParameters )&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;comment&#34;&gt;/* 对于不同的任务，局部变量放在任务的栈里，有各自的副本 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;type&#34;&gt;int32_t&lt;/span&gt; lVariableExample = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;/* 任务函数通常实现为一个无限循环 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;( ;; )&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		&lt;span class=&#34;comment&#34;&gt;/* 任务的代码 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;/* 如果程序从循环中退出，一定要使用vTaskDelete删除自己&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     * NULL表示删除的是自己&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	vTaskDelete( &lt;span class=&#34;literal&#34;&gt;NULL&lt;/span&gt; );&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;/* 程序不会执行到这里, 如果执行到这里就出错了 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;需要注意的点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;这个函数不能有返回值&lt;/li&gt;
+&lt;li&gt;同一个函数，可以用来创建多个任务。即多个任务可以运行同一个函数&lt;/li&gt;
+&lt;li&gt;如果不需要这个任务，必须使用语句显示地删除这个任务&lt;/li&gt;
+&lt;li&gt;每一个任务都有自己的栈以及优先级&lt;/li&gt;
+&lt;li&gt;在每个函数内部，尽量使用局部变量
+&lt;ul&gt;
+&lt;li&gt;每个任务有自己的栈&lt;/li&gt;
+&lt;li&gt;每个任务运行这个函数时
+&lt;ul&gt;
+&lt;li&gt;任务 A 的局部变量放在任务 A 的栈中，任务 B 的局部变量放在任务 B 的栈中&lt;/li&gt;
+&lt;li&gt;不同任务的局部变量，都有自己的副本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如果函数使用全局变量、静态变量的话
+&lt;ul&gt;
+&lt;li&gt;多个任务使用的是同一个副本&lt;/li&gt;
+&lt;li&gt;需要防止冲突&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;任务创建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#任务创建&#34;&gt;#&lt;/a&gt; 任务创建&lt;/h3&gt;
+&lt;p&gt;函数如下：&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;BaseType_t &lt;span class=&#34;title function_&#34;&gt;xTaskCreate&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;( TaskFunction_t pxTaskCode, &lt;span class=&#34;comment&#34;&gt;// 函数指针, 任务函数&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;params&#34;&gt;                        &lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;type&#34;&gt;char&lt;/span&gt; * &lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; pcName, &lt;span class=&#34;comment&#34;&gt;// 任务的名字&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;params&#34;&gt;                        &lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; configSTACK_DEPTH_TYPE usStackDepth, &lt;span class=&#34;comment&#34;&gt;// 栈大小,单位为word,10表示40字节&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;params&#34;&gt;                        &lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; * &lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; pvParameters, &lt;span class=&#34;comment&#34;&gt;// 调用任务函数时传入的参数&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;params&#34;&gt;                        UBaseType_t uxPriority,    &lt;span class=&#34;comment&#34;&gt;// 优先级&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;params&#34;&gt;                        TaskHandle_t * &lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; pxCreatedTask )&lt;/span&gt;; &lt;span class=&#34;comment&#34;&gt;// 任务句柄, 以后使用它来操作这个任务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;参数说明：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;pvTaskCode ：函数指针，任务对应的 C 函数。任务应该永远不退出，或者在退出时调用 vTaskDelete&lt;/li&gt;
+&lt;li&gt;pcName ：任务的名称，仅用于调试目的，长度为 configMAX_TASK_NAME_LEN&lt;/li&gt;
+&lt;li&gt;usStackDepth ：每个任务都有自己的栈，该参数指定了栈的大小，单位为 word。例如传入的是 100，表示栈的大小为 400 字节。确定栈的大小最精确的方法是使用反汇编&lt;/li&gt;
+&lt;li&gt;pvParameters ：调用的任务函数时使用的参数&lt;/li&gt;
+&lt;li&gt;uxPriority ：任务的优先级范围 0 ~ configMAX_PROORITIES - 1。数值越小，优先级越低。如果传入的值过大，xTaskCreate 会将其调整为 configMAX_PRIORITIES – 1&lt;/li&gt;
+&lt;li&gt;pxCreatedTask ：用于保存 xTaskCreate 的输出结果，即任务的句柄（task handle）。如果以后需要堆该任务进行操作，例如修改优先级，则需要使用该句柄。如果不需要该句柄，则传入 NULL&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;任务删除&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#任务删除&#34;&gt;#&lt;/a&gt; 任务删除&lt;/h3&gt;
+&lt;p&gt;任务删除函数：&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;vTaskDelete&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;( TaskHandle_t xTaskToDelete )&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;参数说明：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pvTaskCode ：任务句柄，使用 xTaskCreate 创建任务时可以得到一个句柄。也可以传入 NULL，表示删除自己。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;任务优先级&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#任务优先级&#34;&gt;#&lt;/a&gt; 任务优先级&lt;/h3&gt;
  ]]></description>
         </item>
         <item>
@@ -67,6 +188,20 @@
 &lt;p&gt;This is a image test post.&lt;/p&gt;
 &lt;p&gt;okkk&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;/assets/wallpaper-878514.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://lktwh.github.io/2023/10/03/datastructure/stack/</guid>
+            <title>栈</title>
+            <link>https://lktwh.github.io/2023/10/03/datastructure/stack/</link>
+            <category term="数据结构" scheme="https://lktwh.github.io/categories/datastructure/" />
+            <category term="栈" scheme="https://lktwh.github.io/tags/%E6%A0%88/" />
+            <pubDate>Tue, 03 Oct 2023 20:14:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;这里开始正文。。。。。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[算法，算法 - 新手]  表示在算法下的子目录，算法 - 新手下&lt;/li&gt;
+&lt;li&gt;Java 				表示在 java 分类下&lt;/li&gt;
+&lt;/ul&gt;
  ]]></description>
         </item>
         <item>
