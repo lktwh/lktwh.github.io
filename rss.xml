@@ -503,93 +503,6 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://lktwh.github.io/2023/10/13/robot/C++/%E7%BB%93%E6%9E%84%E4%BD%93/</guid>
-            <title>结构体</title>
-            <link>https://lktwh.github.io/2023/10/13/robot/C++/%E7%BB%93%E6%9E%84%E4%BD%93/</link>
-            <category term="机器人" scheme="https://lktwh.github.io/categories/robot/" />
-            <category term="C++" scheme="https://lktwh.github.io/categories/robot/C/" />
-            <category term="C++" scheme="https://lktwh.github.io/tags/C/" />
-            <pubDate>Fri, 13 Oct 2023 22:26:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;结构类型-宏&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#结构类型-宏&#34;&gt;#&lt;/a&gt; 结构类型、宏&lt;/h1&gt;
-&lt;h3 id=&#34;结构类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#结构类型&#34;&gt;#&lt;/a&gt; 结构类型&lt;/h3&gt;
-&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;date&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; month;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; day;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; year;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 定义变量（还有其他方法）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;date&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;today&lt;/span&gt;;&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 初始化&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;date&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;today&lt;/span&gt; =&lt;/span&gt; &amp;#123;.month = &lt;span class=&#34;number&#34;&gt;7&lt;/span&gt;, .year = &lt;span class=&#34;number&#34;&gt;2023&lt;/span&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;date&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;today&lt;/span&gt; =&lt;/span&gt; &amp;#123;&lt;span class=&#34;number&#34;&gt;9&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;2023&lt;/span&gt;&amp;#125;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;comment&#34;&gt;// 访问成员&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; today.month&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;comment&#34;&gt;// 结构指针&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;date&lt;/span&gt; *&lt;span class=&#34;title&#34;&gt;pDate&lt;/span&gt; =&lt;/span&gt; &amp;amp;today;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;comment&#34;&gt;// 指针所指的结构变量的成员&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;(*pDate).month = &lt;span class=&#34;number&#34;&gt;12&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pDate-&amp;gt;month = &lt;span class=&#34;number&#34;&gt;12&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;自定义数据类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自定义数据类型&#34;&gt;#&lt;/a&gt; 自定义数据类型&lt;/h3&gt;
-&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;typedef&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;ADate&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; month;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; day;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; year;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125; Date;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;宏&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#宏&#34;&gt;#&lt;/a&gt; 宏&lt;/h3&gt;
-&lt;h4 id=&#34;编译预处理指令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编译预处理指令&#34;&gt;#&lt;/a&gt; 编译预处理指令&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;#开头的是编译预处理指令&lt;/li&gt;
-&lt;li&gt;它们不是 C 语言的成分，但是 C 语言程序离不开它们&lt;/li&gt;
-&lt;li&gt;#define 用来定义一个宏
-&lt;ul&gt;
-&lt;li&gt;
-&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;// 结尾没有分号，因为不是 C 的语句
-#define PI 3.14159
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;如果一个宏的值中有其他宏的名字，也是会被替换的&lt;/li&gt;
-&lt;li&gt;如果一个宏的值超过一行，最后一行之前的行末需要加 \&lt;/li&gt;
-&lt;li&gt;宏的值后面出现的注释不会被当作宏的一部分&lt;/li&gt;
-&lt;li&gt;宏可以带参数（像函数一样）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;C 语言包含哪些数据类型？&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;整数
-&lt;ol&gt;
-&lt;li&gt;char：1 字节&lt;/li&gt;
-&lt;li&gt;short：2 字节&lt;/li&gt;
-&lt;li&gt;int：取决于编译器，通常的意义是 “1 个字”&lt;/li&gt;
-&lt;li&gt;long：取决于编译器&lt;/li&gt;
-&lt;li&gt;long long：8 字节&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;浮点数
-&lt;ol&gt;
-&lt;li&gt;float&lt;/li&gt;
-&lt;li&gt;double&lt;/li&gt;
-&lt;li&gt;long double&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;逻辑
-&lt;ol&gt;
-&lt;li&gt;bool&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;指针&lt;/li&gt;
-&lt;li&gt;自定义类型&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;C 语言提供了 sizeof（静态运算符） 来给出某个类型或者某个变量在内存中所占据的字节数&lt;/p&gt;
-&lt;p&gt;整数在计算机中以补码的形式存在。比如 char 类型的变量 c = 255， 那么我们以整数的方式输出，得到的是 -1，如果想让该字符就是 255，那么可以加上 unsigned 关键字&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;在使用和定义这个函数的地方都应该 #include 这个头文件（文本插入）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;声明和定义&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;int i; 变量的定义&lt;/p&gt;
-&lt;p&gt;extern int i; 变量的声明（在头文件中）&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;声明是不产生代码的东西
-&lt;ul&gt;
-&lt;li&gt;函数原型&lt;/li&gt;
-&lt;li&gt;变量声明&lt;/li&gt;
-&lt;li&gt;结构声明&lt;/li&gt;
-&lt;li&gt;宏声明&lt;/li&gt;
-&lt;li&gt;枚举声明&lt;/li&gt;
-&lt;li&gt;类型声明&lt;/li&gt;
-&lt;li&gt;inline 函数&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;定义是产生代码的东西&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
- ]]></description>
-        </item>
-        <item>
             <guid isPermalink="true">https://lktwh.github.io/2023/10/13/robot/C++/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/</guid>
             <title>数组与指针</title>
             <link>https://lktwh.github.io/2023/10/13/robot/C++/%E6%95%B0%E7%BB%84%E4%B8%8E%E6%8C%87%E9%92%88/</link>
@@ -616,41 +529,84 @@
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;取地址运算&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#取地址运算&#34;&gt;#&lt;/a&gt; 取地址运算：&amp;amp;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&amp;amp;：获取变量的地址，操作数必须是一个变量&lt;/li&gt;
-&lt;li&gt;地址的大小是否与 int 相同取决于编译器
-&lt;ul&gt;
 &lt;li&gt;
-&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;int main() &amp;#123;
-
-    int a = 0;
-
-    printf(&amp;quot;%lu\n&amp;quot;, sizeof(int));
-    printf(&amp;quot;%lu\n&amp;quot;, sizeof(&amp;amp;a));
-
-&amp;#125;
-// 在 64 位架构下，得到的结果是：4   8
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;## 指针&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- 指针变量就是保存地址的变量&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - `int *p = &amp;amp;i`&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- 变量的值是内存的地址&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - 普通变量的值是实际的值&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - 指针变量的值是具有实际值的变量的地址&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;#### 作为参数的指针&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;```C 指针参数&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;#include &amp;quot;stdio.h&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;void f(int *p);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;int main() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    int a = 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    printf(&amp;quot;&amp;amp;a=%p\n&amp;quot;, &amp;amp;a);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    f(&amp;amp;a);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    return 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;void f(int *p) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    printf(&amp;quot; p=%p\n&amp;quot;, p);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    printf(&amp;quot;*p=%d\n&amp;quot;, *p);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/**&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;amp;a=00000009087ffc3c&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; p=00000009087ffc3c&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*p=0&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;amp;：获取变量的地址，操作数必须是一个变量&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;地址的大小是否与 int 相同取决于编译器&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;figcaption&gt;&lt;span&gt;取址运算符&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; a = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;%lu\n&amp;quot;&lt;/span&gt;, &lt;span class=&#34;keyword&#34;&gt;sizeof&lt;/span&gt;(&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;%lu\n&amp;quot;&lt;/span&gt;, &lt;span class=&#34;keyword&#34;&gt;sizeof&lt;/span&gt;(&amp;amp;a));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 在 64 位架构下，得到的结果是：4   8&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;指针&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#指针&#34;&gt;#&lt;/a&gt; 指针&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;指针变量就是保存地址的变量
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;int *p = &amp;amp;i&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;变量的值是内存的地址
+&lt;ul&gt;
+&lt;li&gt;普通变量的值是实际的值&lt;/li&gt;
+&lt;li&gt;指针变量的值是具有实际值的变量的地址&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h4 id=&#34;作为参数的指针&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#作为参数的指针&#34;&gt;#&lt;/a&gt; 作为参数的指针&lt;/h4&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;figcaption&gt;&lt;span&gt;指针参数&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;keyword&#34;&gt;include&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;stdio.h&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; *p)&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; a = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;amp;a=%p\n&amp;quot;&lt;/span&gt;, &amp;amp;a);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    f(&amp;amp;a);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; *p)&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot; p=%p\n&amp;quot;&lt;/span&gt;, p);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;printf&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;*p=%d\n&amp;quot;&lt;/span&gt;, *p);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&amp;amp;a=00000009087ffc3c&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt; p=00000009087ffc3c&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;*p=0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h4 id=&#34;访问那个地址上的变量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#访问那个地址上的变量&#34;&gt;#&lt;/a&gt; 访问那个地址上的变量&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;* 是一个单目运算符，用来访问指针的值所表示的地址上的变量&lt;/li&gt;
-&lt;li&gt;可以作左值，也可以作右值
-&lt;ul&gt;
 &lt;li&gt;
-&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;int k = *p;
-*p = k + 1;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;#### 指针应用&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- 函数返回多个值，某些值只能通过指针返回&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;#### 指针与数组&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;传入函数的数组成了什么？&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- 函数参数表中的数组实际上是指针&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - sizeof(a) == sizeof(int *)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - 但是可以使用数组的运算符 [] 进行运算&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;##### 数组变量是特殊的指针&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- 数组变量本身表达地址，因此&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - int a[10]; int *p = a; //不需要 &amp;amp; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - 但是数组的单元表达的是变量 需要使用 &amp;amp; 取地址&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - a == &amp;amp;a[0]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-  [] 运算符可以对数组做，也可以对指针做&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - p[0] &amp;lt;==&amp;gt; a[0]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- \* 运算符可以对指针做，也可以对数组做&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - *a &amp;lt;==&amp;gt; a[0]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- 数组变量是 const 指针，所以不能被赋值，即&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - int a[] &amp;lt;==&amp;gt; int * const a&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - 因此，int b[]; b = a 是错误的&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  - 但是可以写成 int *q = a;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;#### 指针与 const&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;##### 指针是 const（指针常量）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;- 表示一旦得到某个变量的地址，就不能再指向其他的变量&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;```C 指针常量&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;int * const q = &amp;amp;i; // q 是 const&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*q = 22; // OK&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;q++;  // ERROR&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;q = &amp;amp;j;  // ERROR &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;* 是一个单目运算符，用来访问指针的值所表示的地址上的变量&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可以作左值，也可以作右值&lt;/p&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;figcaption&gt;&lt;span&gt;*运算符&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; k = *p;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*p = k + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;指针应用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#指针应用&#34;&gt;#&lt;/a&gt; 指针应用&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;函数返回多个值，某些值只能通过指针返回&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;指针与数组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#指针与数组&#34;&gt;#&lt;/a&gt; 指针与数组&lt;/h4&gt;
+&lt;p&gt;传入函数的数组成了什么？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;函数参数表中的数组实际上是指针
+&lt;ul&gt;
+&lt;li&gt;sizeof(a) == sizeof(int *)&lt;/li&gt;
+&lt;li&gt;但是可以使用数组的运算符 [] 进行运算&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h5 id=&#34;数组变量是特殊的指针&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数组变量是特殊的指针&#34;&gt;#&lt;/a&gt; 数组变量是特殊的指针&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;数组变量本身表达地址，因此
+&lt;ul&gt;
+&lt;li&gt;int a [10]; int *p = a; // 不需要 &amp;amp;&lt;/li&gt;
+&lt;li&gt;但是数组的单元表达的是变量 需要使用 &amp;amp; 取地址&lt;/li&gt;
+&lt;li&gt;a == &amp;amp;a[0]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[] 运算符可以对数组做，也可以对指针做&lt;/li&gt;
+&lt;li&gt;p[0] &amp;lt;==&amp;gt; a[0]&lt;/li&gt;
+&lt;li&gt;* 运算符可以对指针做，也可以对数组做
+&lt;ul&gt;
+&lt;li&gt;*a &amp;lt;==&amp;gt; a[0]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;数组变量是 const 指针，所以不能被赋值，即
+&lt;ul&gt;
+&lt;li&gt;int a[] &amp;lt;==&amp;gt; int * const a&lt;/li&gt;
+&lt;li&gt;因此，int b []; b = a 是错误的&lt;/li&gt;
+&lt;li&gt;但是可以写成 int *q = a;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;指针与-const&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#指针与-const&#34;&gt;#&lt;/a&gt; 指针与 const&lt;/h4&gt;
+&lt;h5 id=&#34;指针是-const指针常量&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#指针是-const指针常量&#34;&gt;#&lt;/a&gt; 指针是 const（指针常量）&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;表示一旦得到某个变量的地址，就不能再指向其他的变量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;figcaption&gt;&lt;span&gt;指针常量&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; * &lt;span class=&#34;type&#34;&gt;const&lt;/span&gt; q = &amp;amp;i; &lt;span class=&#34;comment&#34;&gt;// q 是 const&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*q = &lt;span class=&#34;number&#34;&gt;22&lt;/span&gt;; &lt;span class=&#34;comment&#34;&gt;// OK&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;q++;  &lt;span class=&#34;comment&#34;&gt;// ERROR&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;q = &amp;amp;j;  &lt;span class=&#34;comment&#34;&gt;// ERROR &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h5 id=&#34;所指的是-const常量指针&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#所指的是-const常量指针&#34;&gt;#&lt;/a&gt; 所指的是 const（常量指针）&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;表示不能通过指针去修改那个变量（指针的指向可以修改，但是指针指向的值不能修改）&lt;/li&gt;
@@ -780,6 +736,93 @@
 &lt;p&gt;函数重载碰到函数的默认参数&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://lktwh.github.io/2023/10/13/robot/C++/%E7%BB%93%E6%9E%84%E4%BD%93/</guid>
+            <title>结构体</title>
+            <link>https://lktwh.github.io/2023/10/13/robot/C++/%E7%BB%93%E6%9E%84%E4%BD%93/</link>
+            <category term="机器人" scheme="https://lktwh.github.io/categories/robot/" />
+            <category term="C++" scheme="https://lktwh.github.io/categories/robot/C/" />
+            <category term="C++" scheme="https://lktwh.github.io/tags/C/" />
+            <pubDate>Fri, 13 Oct 2023 22:26:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;结构类型-宏&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#结构类型-宏&#34;&gt;#&lt;/a&gt; 结构类型、宏&lt;/h1&gt;
+&lt;h3 id=&#34;结构类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#结构类型&#34;&gt;#&lt;/a&gt; 结构类型&lt;/h3&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;date&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; month;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; day;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; year;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 定义变量（还有其他方法）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;date&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;today&lt;/span&gt;;&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 初始化&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;date&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;today&lt;/span&gt; =&lt;/span&gt; &amp;#123;.month = &lt;span class=&#34;number&#34;&gt;7&lt;/span&gt;, .year = &lt;span class=&#34;number&#34;&gt;2023&lt;/span&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;date&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;today&lt;/span&gt; =&lt;/span&gt; &amp;#123;&lt;span class=&#34;number&#34;&gt;9&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;2023&lt;/span&gt;&amp;#125;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;comment&#34;&gt;// 访问成员&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; today.month&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;comment&#34;&gt;// 结构指针&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;date&lt;/span&gt; *&lt;span class=&#34;title&#34;&gt;pDate&lt;/span&gt; =&lt;/span&gt; &amp;amp;today;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;comment&#34;&gt;// 指针所指的结构变量的成员&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;(*pDate).month = &lt;span class=&#34;number&#34;&gt;12&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pDate-&amp;gt;month = &lt;span class=&#34;number&#34;&gt;12&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;自定义数据类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自定义数据类型&#34;&gt;#&lt;/a&gt; 自定义数据类型&lt;/h3&gt;
+&lt;figure class=&#34;highlight c&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;typedef&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;ADate&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; month;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; day;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; year;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125; Date;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;宏&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#宏&#34;&gt;#&lt;/a&gt; 宏&lt;/h3&gt;
+&lt;h4 id=&#34;编译预处理指令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编译预处理指令&#34;&gt;#&lt;/a&gt; 编译预处理指令&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;#开头的是编译预处理指令&lt;/li&gt;
+&lt;li&gt;它们不是 C 语言的成分，但是 C 语言程序离不开它们&lt;/li&gt;
+&lt;li&gt;#define 用来定义一个宏
+&lt;ul&gt;
+&lt;li&gt;
+&lt;pre&gt;&lt;code class=&#34;language-C&#34;&gt;// 结尾没有分号，因为不是 C 的语句
+#define PI 3.14159
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如果一个宏的值中有其他宏的名字，也是会被替换的&lt;/li&gt;
+&lt;li&gt;如果一个宏的值超过一行，最后一行之前的行末需要加 \&lt;/li&gt;
+&lt;li&gt;宏的值后面出现的注释不会被当作宏的一部分&lt;/li&gt;
+&lt;li&gt;宏可以带参数（像函数一样）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;C 语言包含哪些数据类型？&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;整数
+&lt;ol&gt;
+&lt;li&gt;char：1 字节&lt;/li&gt;
+&lt;li&gt;short：2 字节&lt;/li&gt;
+&lt;li&gt;int：取决于编译器，通常的意义是 “1 个字”&lt;/li&gt;
+&lt;li&gt;long：取决于编译器&lt;/li&gt;
+&lt;li&gt;long long：8 字节&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;浮点数
+&lt;ol&gt;
+&lt;li&gt;float&lt;/li&gt;
+&lt;li&gt;double&lt;/li&gt;
+&lt;li&gt;long double&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;逻辑
+&lt;ol&gt;
+&lt;li&gt;bool&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;指针&lt;/li&gt;
+&lt;li&gt;自定义类型&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;C 语言提供了 sizeof（静态运算符） 来给出某个类型或者某个变量在内存中所占据的字节数&lt;/p&gt;
+&lt;p&gt;整数在计算机中以补码的形式存在。比如 char 类型的变量 c = 255， 那么我们以整数的方式输出，得到的是 -1，如果想让该字符就是 255，那么可以加上 unsigned 关键字&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;在使用和定义这个函数的地方都应该 #include 这个头文件（文本插入）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;声明和定义&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;int i; 变量的定义&lt;/p&gt;
+&lt;p&gt;extern int i; 变量的声明（在头文件中）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;声明是不产生代码的东西
+&lt;ul&gt;
+&lt;li&gt;函数原型&lt;/li&gt;
+&lt;li&gt;变量声明&lt;/li&gt;
+&lt;li&gt;结构声明&lt;/li&gt;
+&lt;li&gt;宏声明&lt;/li&gt;
+&lt;li&gt;枚举声明&lt;/li&gt;
+&lt;li&gt;类型声明&lt;/li&gt;
+&lt;li&gt;inline 函数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;定义是产生代码的东西&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
  ]]></description>
         </item>
         <item>
@@ -944,6 +987,15 @@
  ]]></description>
         </item>
         <item>
+            <guid isPermalink="true">https://lktwh.github.io/2023/10/03/stm32/F103/</guid>
+            <title>STM32F103</title>
+            <link>https://lktwh.github.io/2023/10/03/stm32/F103/</link>
+            <category term="单片机" scheme="https://lktwh.github.io/categories/stm32/" />
+            <category term="STM32" scheme="https://lktwh.github.io/tags/STM32/" />
+            <pubDate>Tue, 03 Oct 2023 20:14:00 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+        <item>
             <guid isPermalink="true">https://lktwh.github.io/2023/10/03/datastructure/stack/</guid>
             <title>栈</title>
             <link>https://lktwh.github.io/2023/10/03/datastructure/stack/</link>
@@ -956,15 +1008,6 @@
 &lt;li&gt;Java 				表示在 java 分类下&lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://lktwh.github.io/2023/10/03/stm32/F103/</guid>
-            <title>STM32F103</title>
-            <link>https://lktwh.github.io/2023/10/03/stm32/F103/</link>
-            <category term="单片机" scheme="https://lktwh.github.io/categories/stm32/" />
-            <category term="STM32" scheme="https://lktwh.github.io/tags/STM32/" />
-            <pubDate>Tue, 03 Oct 2023 20:14:00 +0800</pubDate>
-            <description><![CDATA[  ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://lktwh.github.io/2023/10/03/hello-world/</guid>
